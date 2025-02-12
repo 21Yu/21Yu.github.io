@@ -3,7 +3,7 @@ import { Box, Typography, Card, CardContent } from '@mui/material';
 
 function Home() {
     return (
-        <Box sx={{ display: 'flex', justifyContent: 'flex-start', p: 4 }}>
+        <Box sx={{ display: 'flex', justifyContent: 'flex-start', p: 8, ml: 10}}>
             {/* Left-hand side card containing the bio and image */}
             <Card sx={{ width: 350, display: 'flex', flexDirection: 'column', alignItems: 'center', p: 2 }}>
                 {/* Rectangular Screenshot */}
