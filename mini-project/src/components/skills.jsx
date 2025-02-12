@@ -11,7 +11,7 @@ const skills = [
 
 export default function Skills() {
   return (
-    <Box sx={{ textAlign: "center", mt: 4 }}>
+    <Box sx={{ textAlign: "center", mt: 14 }}>
       <Typography variant="h4" sx={{ mb: 2, fontWeight: "bold" }}>
         Skills
       </Typography>
