@@ -1,28 +1,28 @@
-import React, { useState } from "react";
-import { AppBar, Tabs, Tab, Toolbar, Typography, Box } from "@mui/material";
+import * as React from "react";
+import { Tabs, Tab, Box } from "@mui/material";
 import { Link, useLocation } from "react-router-dom";
 
-const Navbar = () => {
+export default function ColorTabs() {
   const location = useLocation();
-  const [value, setValue] = useState(location.pathname);
+  const [value, setValue] = React.useState(location.pathname);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
 
   return (
-    <AppBar position="static">
-      <Toolbar>
-        <Box sx={{ flexGrow: 1, display: "flex", justifyContent: "center" }}>
-          <Tabs value={value} onChange={handleChange} textColor="inherit" indicatorColor="secondary">
-            <Tab label="Home" value="/" component={Link} to="/" />
-            <Tab label="About" value="/about" component={Link} to="/about" />
-            <Tab label="Projects" value="/projects" component={Link} to="/projects" />
-          </Tabs>
-        </Box>
-      </Toolbar>
-    </AppBar>
+    <Box sx={{ width: "100%" }}>
+      <Tabs
+        value={value}
+        onChange={handleChange}
+        textColor="secondary"
+        indicatorColor="secondary"
+        aria-label="navigation tabs"
+      >
+        <Tab value="/" label="Home" component={Link} to="/" sx={{ width: 'auto' }} />
+        <Tab value="/about" label="About" component={Link} to="/about" sx={{ width: 'auto' }} />
+        <Tab value="/projects" label="Projects" component={Link} to="/projects" sx={{ width: 'auto' }} />
+      </Tabs>
+    </Box>
   );
-};
-
-export default Navbar;
+}
