@@ -18,6 +18,7 @@ export default function ColorTabs() {
         textColor="secondary"
         indicatorColor="secondary"
         aria-label="navigation tabs"
+        centered
       >
         <Tab value="/" label="Home" component={Link} to="/" sx={{ width: 'auto' }} />
         <Tab value="/about" label="About" component={Link} to="/about" sx={{ width: 'auto' }} />
