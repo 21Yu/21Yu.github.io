@@ -1,23 +1,29 @@
 import React from 'react';
-import { Box, Typography, Card, CardContent, CardMedia, Button, Grid } from '@mui/material';
+import { Box, Typography, Card, CardContent, CardMedia, Button, Grid2 } from '@mui/material';
 
 function Projects() {
     return (
-        <Box sx={{ p: 8 }}>
-            
+        <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', p: 8, gap: 4 }}>
+
             {/* Projects Title */}
             <Typography variant="h4" sx={{ fontWeight: 'bold', mb: 4, textAlign: 'center' }}>
                 My Projects
             </Typography>
 
             {/* Solo Projects Section */}
-            <Typography variant="h5" sx={{ fontWeight: 'bold', mb: 2, textAlign: 'center' }}>
+            <Typography variant="h5" sx={{ fontWeight: 'bold', mb: 2, mt: 2, textAlign: 'center' }}>
                 Solo Projects
             </Typography>
-            <Grid container spacing={4} justifyContent="center">
+            <Grid2 container spacing={4} justifyContent="center" alignItems="stretch">
                 {/* Solo Project 1 */}
-                <Grid item xs={12} sm={6} md={4}>
-                    <Card sx={{ height: '100%' }}>
+                <Grid2 item xs={12} sm={6} md={4}>
+                    <Card sx={{     width: 400,
+                                        display: 'flex',
+                                        flexDirection: 'column',
+                                        alignItems: 'center',
+                                        justifyContent: 'space-between', // Ensures content is spread out properly
+                                        height: '100%', // Ensures the card stretches to match the other cards
+                                        p: 2 }}>
                         <CardMedia
                             component="img"
                             height="200"
@@ -41,11 +47,17 @@ function Projects() {
                             </Button>
                         </CardContent>
                     </Card>
-                </Grid>
+                </Grid2>
 
                 {/* Solo Project 2 */}
-                <Grid item xs={12} sm={6} md={4}>
-                    <Card sx={{ height: '100%' }}>
+                <Grid2 item xs={12} sm={6} md={4}>
+                    <Card sx={{     width: 400,
+                                        display: 'flex',
+                                        flexDirection: 'column',
+                                        alignItems: 'center',
+                                        justifyContent: 'space-between', // Ensures content is spread out properly
+                                        height: '100%', // Ensures the card stretches to match the other cards
+                                        p: 2 }}>
                         <CardMedia
                             component="img"
                             height="200"
@@ -69,74 +81,87 @@ function Projects() {
                             </Button>
                         </CardContent>
                     </Card>
-                </Grid>
+                </Grid2>
 
                 {/* Add more solo projects similarly */}
-            </Grid>
+            </Grid2>
 
             {/* Team Projects Section */}
             <Typography variant="h5" sx={{ fontWeight: 'bold', mt: 6, mb: 2, textAlign: 'center' }}>
                 Team Projects
             </Typography>
-            <Grid container spacing={4} justifyContent="center">
+            <Grid2 container spacing={4} justifyContent="center" alignItems="stretch">
                 {/* Team Project 1 */}
-                <Grid item xs={12} sm={6} md={4}>
-                    <Card sx={{ height: '100%' }}>
+                <Grid2 item xs={12} sm={6} md={4}>
+                    <Card sx={{     width: 400,
+                                        display: 'flex',
+                                        flexDirection: 'column',
+                                        alignItems: 'center',
+                                        justifyContent: 'space-between', // Ensures content is spread out properly
+                                        height: '100%', // Ensures the card stretches to match the other cards
+                                    p: 2 }}>
                         <CardMedia
                             component="img"
                             height="200"
-                            image="/hackathon-project1-screenshot.png"  // Replace with your screenshot path
-                            alt="Hackathon Project 1 Screenshot"
+                            image="/Menu_Mayhem.jpg"  // Replace with your screenshot path
+                            alt="Menu_Mayhem"
                         />
-                        <CardContent>
+                        <CardContent sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
                             <Typography variant="h5" sx={{ mb: 2 }}>
-                                Hackathon Project 1: Real-time Chat App
+                                Menu Mayhem
                             </Typography>
-                            <Typography variant="body2" color="text.secondary" sx={{ mb: 2 }}>
-                                A real-time chat application developed during a hackathon using Node.js and WebSockets.
+                            <Typography variant="body2" color="text.secondary" sx={{ mb: 2, whiteSpace: 'normal' }}>
+                                Bring order to the chaos of friend groups not being able to pick where to eat out!
+                                Use Menu Mayhem to come to harmony and find out where you will eat!
                             </Typography>
                             <Button 
                                 variant="contained" 
                                 color="primary" 
-                                href="https://github.com/yourusername/chat-app"  // Replace with your project link
+                                href="https://devpost.com/software/menu-mayhem"  // Replace with your project link
                                 target="_blank"
                             >
                                 View Project
                             </Button>
                         </CardContent>
                     </Card>
-                </Grid>
+                </Grid2>
 
                 {/* Team Project 2 */}
-                <Grid item xs={12} sm={6} md={4}>
-                    <Card sx={{ height: '100%' }}>
+                <Grid2 item xs={12} sm={6} md={4}>
+                    <Card sx={{     width: 400,
+                                    display: 'flex',
+                                    flexDirection: 'column',
+                                    alignItems: 'center',
+                                    justifyContent: 'space-between', // Ensures content is spread out properly
+                                    height: '100%', // Ensures the card stretches to match the other cards
+                                    p: 2 }}>
                         <CardMedia
                             component="img"
                             height="200"
-                            image="/hackathon-project2-screenshot.png"  // Replace with your screenshot path
-                            alt="Hackathon Project 2 Screenshot"
+                            image="/Leaf_To_Success.png"  // Replace with your screenshot path
+                            alt="Leaf To Success"
                         />
-                        <CardContent>
+                        <CardContent sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
                             <Typography variant="h5" sx={{ mb: 2 }}>
-                                Hackathon Project 2: Smart Health Tracker
+                                Leaf To Success
                             </Typography>
                             <Typography variant="body2" color="text.secondary" sx={{ mb: 2 }}>
-                                A health tracker app built with a team for a hackathon that syncs data with wearables.
+                                A personal portfolio built using React and Material-UI to showcase my work.
                             </Typography>
                             <Button 
                                 variant="contained" 
                                 color="primary" 
-                                href="https://github.com/yourusername/smart-health-tracker"  // Replace with your project link
+                                href="https://devpost.com/software/leaf-to-success"  // Replace with your project link
                                 target="_blank"
                             >
                                 View Project
                             </Button>
                         </CardContent>
                     </Card>
-                </Grid>
+                </Grid2>
 
-                {/* Add more team projects similarly */}
-            </Grid>
+                {/* Add more Team projects similarly */}
+            </Grid2>
         </Box>
     );
 }
