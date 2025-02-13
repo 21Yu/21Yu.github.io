@@ -4,10 +4,19 @@ import Footer from '../components/Footer';
 
 function About() {
     return (
+        <>
         <Box sx={{ 
             display: 'flex', 
             flexDirection: 'column', 
-            minHeight: '100vh'  // Ensures full viewport height
+            minHeight: '100vh', // Ensures the page is at least the height of the screen
+            background: `
+            radial-gradient(circle at 50% 50%, rgba(34, 139, 34, 0.9), rgba(0, 100, 0, 0.9), transparent),
+            linear-gradient(120deg, rgba(0, 128, 0, 0.8), rgba(30, 120, 60, 0.8), rgba(34, 139, 34, 0.8))
+          `,
+            backgroundSize: '400% 400%, 300% 300%',
+            backgroundBlendMode: 'overlay',
+            animation: 'gradientFlow 15s linear infinite, gradientLayer 10s linear infinite',
+            color: 'white'
         }}>
             
             {/* Main Content */}
@@ -91,6 +100,21 @@ function About() {
             {/* Footer (Sticks to the bottom) */}
             <Footer />
         </Box>
+        {/* Keyframes Animation */}
+        <style>
+        {`
+            @keyframes gradientFlow {
+                0% { background-position: 0% 50%; }
+                100% { background-position: 300% 50%; }
+            }
+
+            @keyframes gradientLayer {
+                0% { background-position: 50% 0%; }
+                100% { background-position: 50% 300%; }
+            }
+            `}
+        </style>
+    </>
     );
 }
 
