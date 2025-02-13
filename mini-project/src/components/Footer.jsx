@@ -8,10 +8,10 @@ const Footer = () => {
     <Box 
       component="footer"
       sx={{ 
-        mt: 8, 
+        // mt: 8, 
         py: 4, 
         textAlign: "center", 
-        backgroundColor: 'black', 
+        backgroundColor: '#222222', 
         display: "flex", 
         flexDirection: "column", 
         alignItems: "center" 

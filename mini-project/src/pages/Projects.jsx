@@ -20,7 +20,7 @@ function Projects() {
             animation: 'gradientFlow 15s linear infinite, gradientLayer 10s linear infinite',
             color: 'white'
           }}>
-                <Navbar />
+                {/* <Navbar /> */}
 
             <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', p: 8, gap: 4, flexGrow: 1 }}>
                 {/* Projects Title */}
@@ -184,7 +184,7 @@ function Projects() {
                 </Grid2>
             </Box>
 
-            <Footer />
+            {/* <Footer /> */}
         </Box>
         {/* Keyframes Animation */}
         <style>

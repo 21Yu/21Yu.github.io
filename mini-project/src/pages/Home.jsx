@@ -20,7 +20,7 @@ function Home() {
       animation: 'gradientFlow 15s linear infinite, gradientLayer 10s linear infinite',
       color: 'white'
     }}>
-      <Navbar />
+      {/* <Navbar /> */}
       
       {/* Main Content */}
       <Box sx={{ display: 'flex', justifyContent: 'flex-start', flexGrow: 1, p: 8, ml: 10 }}>
@@ -52,7 +52,7 @@ function Home() {
       </Box>
 
       {/* Footer (Sticks to the bottom) */}
-      <Footer />
+      {/* <Footer /> */}
       
     </Box>
 

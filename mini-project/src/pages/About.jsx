@@ -20,7 +20,7 @@ function About() {
             animation: 'gradientFlow 15s linear infinite, gradientLayer 10s linear infinite',
             color: 'white'
         }}>
-            <Navbar />
+            {/* <Navbar /> */}
             
             {/* Main Content */}
             <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', p: 8, gap: 4, flexGrow: 1 }}>
@@ -101,7 +101,7 @@ function About() {
             </Box>
 
             {/* Footer (Sticks to the bottom) */}
-            <Footer />
+            {/* <Footer /> */}
         </Box>
         {/* Keyframes Animation */}
         <style>
