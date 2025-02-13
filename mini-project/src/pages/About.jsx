@@ -1,7 +1,6 @@
 import React from 'react';
 import { Box, Typography, Card, CardContent, List, ListItem } from '@mui/material';
-import Footer from '../components/Footer';  
-import Navbar from '../components/Navbar';
+
 
 
 function About() {
@@ -35,11 +34,11 @@ function About() {
                         alt="SFU Campus"
                         style={{ width: '100%', height: 'auto', marginBottom: '16px', borderRadius: '8px' }}
                     />
-                    <CardContent sx={{ textAlign: 'center' }}>
+                    <CardContent sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
                         <Typography variant="h5" sx={{ mb: 2 }}>
                             Simon Fraser University
                         </Typography>
-                        <Typography variant="body1">
+                        <Typography variant="body1" color="text.secondary" sx={{ mb: 2 }}>
                             I am currently a Computer Science student at SFU. I am passionate about solving problems and 
                             continuously improving my technical skills.
                         </Typography>
@@ -59,11 +58,11 @@ function About() {
                             alt="EDO Japan"
                             style={{ width: '100%', height: 'auto', marginBottom: '16px', borderRadius: '8px' }}
                         />
-                        <CardContent sx={{ textAlign: 'center' }}>
+                        <CardContent sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
                             <Typography variant="h5" sx={{ mb: 2 }}>
                                 Cook - Edo Japan
                             </Typography>
-                            <Typography variant="body2">
+                            <Typography variant="body2" color="text.secondary" sx={{ mb: 2 }}>
                                 <strong>Transferable Skills:</strong>
                                 <List sx={{ padding: 0 }}>
                                     <ListItem sx={{ display: 'list-item' }}>Teamwork: Collaborated with a diverse team.</ListItem>
@@ -82,11 +81,11 @@ function About() {
                             alt="Yifang"
                             style={{ width: '100%', height: 'auto', marginBottom: '16px', borderRadius: '8px' }}
                         />
-                        <CardContent sx={{ textAlign: 'center' }}>
+                        <CardContent sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
                             <Typography variant="h5" sx={{ mb: 2 }}>
                                 Barista - Yifang Taiwan Fruit Tea
                             </Typography>
-                            <Typography variant="body2">
+                            <Typography variant="body2" color="text.secondary" sx={{ mb: 2 }}> 
                                 <strong>Transferable Skills:</strong>
                                 <List sx={{ padding: 0 }}>
                                     <ListItem sx={{ display: 'list-item' }}>Customer Communication: Engaged with customers effectively.</ListItem>

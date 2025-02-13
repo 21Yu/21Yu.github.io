@@ -1,8 +1,6 @@
 import React from 'react';
 import { Box, Typography, Card, CardContent } from '@mui/material';
 import Skills from '../components/skills';  
-import Footer from '../components/Footer';  
-import Navbar from '../components/Navbar';
 
 function Home() {
   return (
@@ -31,11 +29,11 @@ function Home() {
             alt="Your Screenshot"
             style={{ width: '100%', height: 'auto', marginBottom: '16px', borderRadius: '8px' }}
           />
-          <CardContent sx={{ textAlign: 'center' }}>
+          <CardContent sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
             <Typography variant="h5" sx={{ mb: 2 }}>
               Overview
             </Typography>
-            <Typography variant="body1">
+            <Typography variant="body1" color="text.secondary" sx={{ mb: 2 }}>
               I'm a Computer Science student with a strong interest in software engineering,
               machine learning, and blockchain technology. I continuously expand my knowledge through hands-on projects and problem-solving.
             </Typography>

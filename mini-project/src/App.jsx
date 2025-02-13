@@ -9,6 +9,9 @@ import Footer from './components/Footer'; // Ensure you have a Footer component
 
 // Define a dark theme with white text
 const theme = createTheme({
+  typography: {
+    fontFamily: '"Inter", sans-serif',
+  },
   palette: {
     primary: {
       main: '#ffffff', // White text for Navbar and Tabs
@@ -18,7 +21,7 @@ const theme = createTheme({
     },
     background: {
       default: '#000000', // Black background for the entire page
-      paper: '#222222', // Dark gray for cards, modals, etc.
+      paper: '#1A1A1A', // Dark gray for cards, modals, etc.
     },
     text: {
       primary: '#ffffff', // White text

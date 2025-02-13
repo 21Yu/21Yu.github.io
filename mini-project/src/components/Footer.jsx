@@ -11,7 +11,7 @@ const Footer = () => {
         // mt: 8, 
         py: 4, 
         textAlign: "center", 
-        backgroundColor: '#222222', 
+        backgroundColor: '#1A1A1A', 
         display: "flex", 
         flexDirection: "column", 
         alignItems: "center" 

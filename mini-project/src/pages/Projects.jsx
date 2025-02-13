@@ -1,7 +1,5 @@
 import React from 'react';
 import { Box, Typography, Card, CardContent, CardMedia, Button, Grid2 } from '@mui/material';
-import Footer from '../components/Footer';  
-import Navbar from '../components/Navbar';
 
 
 function Projects() {
@@ -52,7 +50,7 @@ function Projects() {
                                 <Typography variant="h5" sx={{ mb: 2 }}>
                                     Music-Streaming
                                 </Typography>
-                                <Typography variant="body2" color="text.secondary" sx={{ mb: 2, whiteSpace: 'normal' }}>
+                                <Typography variant="body1" color="text.secondary" sx={{ mb: 2, whiteSpace: 'normal' }}>
                                 "Music-Streaming" is a sleek and responsive website built for the artist evergn., designed to showcase their music and provide 
                                 seamless access to various streaming platforms. 
                                 </Typography>
@@ -87,7 +85,7 @@ function Projects() {
                                 <Typography variant="h5" sx={{ mb: 2 }}>
                                     daily-routine
                                 </Typography>
-                                <Typography variant="body2" color="text.secondary" sx={{ mb: 2, whiteSpace: 'normal' }}>
+                                <Typography variant="body1" color="text.secondary" sx={{ mb: 2, whiteSpace: 'normal' }}>
                                     "Daily Routine" is an interactive web application that visualizes how different lifestyles structure their day.
                                     The project allows users to explore and compare the daily schedules of a loafer, slave, retiree, and billionaire through an intuitive dropdown menu.
                                 </Typography>
@@ -130,7 +128,7 @@ function Projects() {
                                 <Typography variant="h5" sx={{ mb: 2 }}>
                                     Menu Mayhem
                                 </Typography>
-                                <Typography variant="body2" color="text.secondary" sx={{ mb: 2, whiteSpace: 'normal' }}>
+                                <Typography variant="body1" color="text.secondary" sx={{ mb: 2, whiteSpace: 'normal' }}>
                                     Bring order to the chaos of friend groups not being able to pick where to eat out!
                                     Use Menu Mayhem to come to harmony and find out where you will eat!
                                 </Typography>
@@ -165,7 +163,7 @@ function Projects() {
                                 <Typography variant="h5" sx={{ mb: 2 }}>
                                     Leaf To Success
                                 </Typography>
-                                <Typography variant="body2" color="text.secondary" sx={{ mb: 2 }}>
+                                <Typography variant="body1" color="text.secondary" sx={{ mb: 2 }}>
                                     A personal portfolio built using React and Material-UI to showcase my work.
                                 </Typography>
                                 <Button 
