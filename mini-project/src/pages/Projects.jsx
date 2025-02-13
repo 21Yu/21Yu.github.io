@@ -23,24 +23,25 @@ function Projects() {
                                         alignItems: 'center',
                                         justifyContent: 'space-between', // Ensures content is spread out properly
                                         height: '100%', // Ensures the card stretches to match the other cards
-                                        p: 2 }}>
+                                    p: 2 }}>
                         <CardMedia
                             component="img"
                             height="200"
-                            image="/project1-screenshot.png"  // Replace with your screenshot path
-                            alt="Project 1 Screenshot"
+                            image="/music_streaming.png"  // Replace with your screenshot path
+                            alt="Music-Streaming"
                         />
-                        <CardContent>
+                        <CardContent sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
                             <Typography variant="h5" sx={{ mb: 2 }}>
-                                Project 1: Weather App
+                                Music-Streaming
                             </Typography>
-                            <Typography variant="body2" color="text.secondary" sx={{ mb: 2 }}>
-                                A weather forecasting application using React and OpenWeather API.
+                            <Typography variant="body2" color="text.secondary" sx={{ mb: 2, whiteSpace: 'normal' }}>
+                            "Music-Streaming" is a sleek and responsive website built for the artist evergn., designed to showcase their music and provide 
+                            seamless access to various streaming platforms. 
                             </Typography>
                             <Button 
                                 variant="contained" 
                                 color="primary" 
-                                href="https://github.com/yourusername/weather-app"  // Replace with your project link
+                                href="https://github.com/21Yu/music-streaming"  // Replace with your project link
                                 target="_blank"
                             >
                                 View Project
@@ -57,24 +58,25 @@ function Projects() {
                                         alignItems: 'center',
                                         justifyContent: 'space-between', // Ensures content is spread out properly
                                         height: '100%', // Ensures the card stretches to match the other cards
-                                        p: 2 }}>
+                                    p: 2 }}>
                         <CardMedia
                             component="img"
                             height="200"
-                            image="/project2-screenshot.png"  // Replace with your screenshot path
-                            alt="Project 2 Screenshot"
+                            image="/daily-routine.png"  // Replace with your screenshot path
+                            alt="daily-routine"
                         />
-                        <CardContent>
+                        <CardContent sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
                             <Typography variant="h5" sx={{ mb: 2 }}>
-                                Project 2: Portfolio Website
+                                daily-routine
                             </Typography>
-                            <Typography variant="body2" color="text.secondary" sx={{ mb: 2 }}>
-                                A personal portfolio built using React and Material-UI to showcase my work.
+                            <Typography variant="body2" color="text.secondary" sx={{ mb: 2, whiteSpace: 'normal' }}>
+                                "Daily Routine" is an interactive web application that visualizes how different lifestyles structure their day.
+                                The project allows users to explore and compare the daily schedules of a loafer, slave, retiree, and billionaire through an intuitive dropdown menu.
                             </Typography>
                             <Button 
                                 variant="contained" 
                                 color="primary" 
-                                href="https://github.com/yourusername/portfolio"  // Replace with your project link
+                                href="https://github.com/21Yu/daily-routine"  // Replace with your project link
                                 target="_blank"
                             >
                                 View Project
