@@ -2,6 +2,7 @@ import React from "react";
 import { Box, Typography, Link } from "@mui/material";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
+
 const Footer = () => {
   return (
     <Box 
@@ -10,7 +11,7 @@ const Footer = () => {
         mt: 8, 
         py: 4, 
         textAlign: "center", 
-        backgroundColor: "#f5f5f5", 
+        backgroundColor: 'black', 
         display: "flex", 
         flexDirection: "column", 
         alignItems: "center" 
@@ -27,7 +28,7 @@ const Footer = () => {
       </Box>
 
       {/* Copyright */}
-      <Typography variant="body2" color="text.secondary">
+      <Typography variant="body2" color='white'>
         © {new Date().getFullYear()} Yu Wu. All Rights Reserved.
       </Typography>
     </Box>

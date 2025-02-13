@@ -2,6 +2,7 @@ import React from 'react';
 import { Box, Typography, Card, CardContent } from '@mui/material';
 import Skills from '../components/skills';  
 import Footer from '../components/Footer';  
+import Navbar from '../components/Navbar';
 
 function Home() {
   return (
@@ -19,6 +20,7 @@ function Home() {
       animation: 'gradientFlow 15s linear infinite, gradientLayer 10s linear infinite',
       color: 'white'
     }}>
+      <Navbar />
       
       {/* Main Content */}
       <Box sx={{ display: 'flex', justifyContent: 'flex-start', flexGrow: 1, p: 8, ml: 10 }}>

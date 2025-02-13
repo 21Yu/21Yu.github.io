@@ -1,6 +1,8 @@
 import React from 'react';
 import { Box, Typography, Card, CardContent, CardMedia, Button, Grid2 } from '@mui/material';
 import Footer from '../components/Footer';  
+import Navbar from '../components/Navbar';
+
 
 function Projects() {
     return (
@@ -18,6 +20,7 @@ function Projects() {
             animation: 'gradientFlow 15s linear infinite, gradientLayer 10s linear infinite',
             color: 'white'
           }}>
+                <Navbar />
 
             <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', p: 8, gap: 4, flexGrow: 1 }}>
                 {/* Projects Title */}
