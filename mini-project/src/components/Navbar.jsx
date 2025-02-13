@@ -2,6 +2,7 @@ import * as React from "react";
 import { Tabs, Tab, Box } from "@mui/material";
 import { Link, useLocation } from "react-router-dom";
 
+
 export default function ColorTabs() {
   const location = useLocation();
   const [value, setValue] = React.useState(location.pathname);
@@ -11,12 +12,12 @@ export default function ColorTabs() {
   };
 
   return (
-    <Box sx={{ width: "100%" }}>
+    <Box sx={{ width: "100%", backgroundColor: '#1A1A1A' }}>
       <Tabs
         value={value}
         onChange={handleChange}
-        textColor="secondary"
-        indicatorColor="secondary"
+        textColor="primary"
+        indicatorColor="primary"
         aria-label="navigation tabs"
         centered
       >

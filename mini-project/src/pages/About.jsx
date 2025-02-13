@@ -1,14 +1,25 @@
 import React from 'react';
 import { Box, Typography, Card, CardContent, List, ListItem } from '@mui/material';
-import Footer from '../components/Footer';  
+
+
 
 function About() {
     return (
+        <>
         <Box sx={{ 
             display: 'flex', 
             flexDirection: 'column', 
-            minHeight: '100vh'  // Ensures full viewport height
+            minHeight: '100vh', // Ensures the page is at least the height of the screen
+            background: `
+            radial-gradient(circle at 50% 50%, rgba(34, 139, 34, 0.9), rgba(0, 100, 0, 0.9), transparent),
+            linear-gradient(120deg, rgba(0, 128, 0, 0.8), rgba(30, 120, 60, 0.8), rgba(34, 139, 34, 0.8))
+          `,
+            backgroundSize: '400% 400%, 300% 300%',
+            backgroundBlendMode: 'overlay',
+            animation: 'gradientFlow 15s linear infinite, gradientLayer 10s linear infinite',
+            color: 'white'
         }}>
+            {/* <Navbar /> */}
             
             {/* Main Content */}
             <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', p: 8, gap: 4, flexGrow: 1 }}>
@@ -23,11 +34,11 @@ function About() {
                         alt="SFU Campus"
                         style={{ width: '100%', height: 'auto', marginBottom: '16px', borderRadius: '8px' }}
                     />
-                    <CardContent sx={{ textAlign: 'center' }}>
+                    <CardContent sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
                         <Typography variant="h5" sx={{ mb: 2 }}>
                             Simon Fraser University
                         </Typography>
-                        <Typography variant="body1">
+                        <Typography variant="body1" color="text.secondary" sx={{ mb: 2 }}>
                             I am currently a Computer Science student at SFU. I am passionate about solving problems and 
                             continuously improving my technical skills.
                         </Typography>
@@ -47,11 +58,11 @@ function About() {
                             alt="EDO Japan"
                             style={{ width: '100%', height: 'auto', marginBottom: '16px', borderRadius: '8px' }}
                         />
-                        <CardContent sx={{ textAlign: 'center' }}>
+                        <CardContent sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
                             <Typography variant="h5" sx={{ mb: 2 }}>
                                 Cook - Edo Japan
                             </Typography>
-                            <Typography variant="body2">
+                            <Typography variant="body2" color="text.secondary" sx={{ mb: 2 }}>
                                 <strong>Transferable Skills:</strong>
                                 <List sx={{ padding: 0 }}>
                                     <ListItem sx={{ display: 'list-item' }}>Teamwork: Collaborated with a diverse team.</ListItem>
@@ -70,11 +81,11 @@ function About() {
                             alt="Yifang"
                             style={{ width: '100%', height: 'auto', marginBottom: '16px', borderRadius: '8px' }}
                         />
-                        <CardContent sx={{ textAlign: 'center' }}>
+                        <CardContent sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
                             <Typography variant="h5" sx={{ mb: 2 }}>
                                 Barista - Yifang Taiwan Fruit Tea
                             </Typography>
-                            <Typography variant="body2">
+                            <Typography variant="body2" color="text.secondary" sx={{ mb: 2 }}> 
                                 <strong>Transferable Skills:</strong>
                                 <List sx={{ padding: 0 }}>
                                     <ListItem sx={{ display: 'list-item' }}>Customer Communication: Engaged with customers effectively.</ListItem>
@@ -89,8 +100,23 @@ function About() {
             </Box>
 
             {/* Footer (Sticks to the bottom) */}
-            <Footer />
+            {/* <Footer /> */}
         </Box>
+        {/* Keyframes Animation */}
+        <style>
+        {`
+            @keyframes gradientFlow {
+                0% { background-position: 0% 50%; }
+                100% { background-position: 300% 50%; }
+            }
+
+            @keyframes gradientLayer {
+                0% { background-position: 50% 0%; }
+                100% { background-position: 50% 300%; }
+            }
+            `}
+        </style>
+    </>
     );
 }
 

@@ -1,14 +1,24 @@
 import React from 'react';
 import { Box, Typography, Card, CardContent, CardMedia, Button, Grid2 } from '@mui/material';
-import Footer from '../components/Footer';  
+
 
 function Projects() {
     return (
+        <>
         <Box sx={{ 
             display: 'flex', 
             flexDirection: 'column', 
-            minHeight: '100vh' // Ensures the page is at least the height of the screen
+            minHeight: '100vh', // Ensures the page is at least the height of the screen
+            background: `
+            radial-gradient(circle at 50% 50%, rgba(34, 139, 34, 0.9), rgba(0, 100, 0, 0.9), transparent),
+            linear-gradient(120deg, rgba(0, 128, 0, 0.8), rgba(30, 120, 60, 0.8), rgba(34, 139, 34, 0.8))
+          `,
+            backgroundSize: '400% 400%, 300% 300%',
+            backgroundBlendMode: 'overlay',
+            animation: 'gradientFlow 15s linear infinite, gradientLayer 10s linear infinite',
+            color: 'white'
           }}>
+                {/* <Navbar /> */}
 
             <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', p: 8, gap: 4, flexGrow: 1 }}>
                 {/* Projects Title */}
@@ -40,7 +50,7 @@ function Projects() {
                                 <Typography variant="h5" sx={{ mb: 2 }}>
                                     Music-Streaming
                                 </Typography>
-                                <Typography variant="body2" color="text.secondary" sx={{ mb: 2, whiteSpace: 'normal' }}>
+                                <Typography variant="body1" color="text.secondary" sx={{ mb: 2, whiteSpace: 'normal' }}>
                                 "Music-Streaming" is a sleek and responsive website built for the artist evergn., designed to showcase their music and provide 
                                 seamless access to various streaming platforms. 
                                 </Typography>
@@ -75,7 +85,7 @@ function Projects() {
                                 <Typography variant="h5" sx={{ mb: 2 }}>
                                     daily-routine
                                 </Typography>
-                                <Typography variant="body2" color="text.secondary" sx={{ mb: 2, whiteSpace: 'normal' }}>
+                                <Typography variant="body1" color="text.secondary" sx={{ mb: 2, whiteSpace: 'normal' }}>
                                     "Daily Routine" is an interactive web application that visualizes how different lifestyles structure their day.
                                     The project allows users to explore and compare the daily schedules of a loafer, slave, retiree, and billionaire through an intuitive dropdown menu.
                                 </Typography>
@@ -118,7 +128,7 @@ function Projects() {
                                 <Typography variant="h5" sx={{ mb: 2 }}>
                                     Menu Mayhem
                                 </Typography>
-                                <Typography variant="body2" color="text.secondary" sx={{ mb: 2, whiteSpace: 'normal' }}>
+                                <Typography variant="body1" color="text.secondary" sx={{ mb: 2, whiteSpace: 'normal' }}>
                                     Bring order to the chaos of friend groups not being able to pick where to eat out!
                                     Use Menu Mayhem to come to harmony and find out where you will eat!
                                 </Typography>
@@ -153,7 +163,7 @@ function Projects() {
                                 <Typography variant="h5" sx={{ mb: 2 }}>
                                     Leaf To Success
                                 </Typography>
-                                <Typography variant="body2" color="text.secondary" sx={{ mb: 2 }}>
+                                <Typography variant="body1" color="text.secondary" sx={{ mb: 2 }}>
                                     A personal portfolio built using React and Material-UI to showcase my work.
                                 </Typography>
                                 <Button 
@@ -172,8 +182,23 @@ function Projects() {
                 </Grid2>
             </Box>
 
-            <Footer />
+            {/* <Footer /> */}
         </Box>
+        {/* Keyframes Animation */}
+        <style>
+        {`
+            @keyframes gradientFlow {
+                0% { background-position: 0% 50%; }
+                100% { background-position: 300% 50%; }
+            }
+
+            @keyframes gradientLayer {
+                0% { background-position: 50% 0%; }
+                100% { background-position: 50% 300%; }
+            }
+            `}
+        </style>
+    </>
     );
 }
 
