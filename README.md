@@ -18,7 +18,7 @@ This is a personal portfolio website showcasing my skills, projects, and interes
 
 ## Live Demo
 
-You can check out the live version of this portfolio website on GitHub Pages by visiting:  
+Project is deployed via gh-pages branch. You can check out the live version of this portfolio website on GitHub Pages by visiting:  
 [https://21yu.github.io/](https://21yu.github.io/)
 
 ## Why I Chose MIT License
