@@ -15,15 +15,11 @@ const About: React.FC = () => {
         </h2>
 
         {/* Description */}
-        <div className="text-neutral-400 text-lg md:text-xl leading-relaxed space-y-6 text-center">
+        <div className="max-w-2xl mx-auto text-neutral-400 text-lg md:text-xl leading-relaxed space-y-6 text-center">
           <p>
             I'm a Computer Science student at <span className="text-white font-medium">Simon Fraser University</span>, currently exploring the intersection of
             <span className="text-white font-medium"> machine learning</span> and
             <span className="text-white font-medium"> computational finance</span>.
-          </p>
-          <p>
-            I enjoy building scalable systems, experimenting with intelligent algorithms, and diving into data to uncover meaningful insights.
-            My technical interests lie in back-end engineering, time series forecasting, and real-world ML applications.
           </p>
         </div>
       </div>

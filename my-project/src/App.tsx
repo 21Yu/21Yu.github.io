@@ -10,17 +10,17 @@ import Skills from './components/Skills';
 const App: React.FC = () => {
   return (
     <>
-    <div className="font-sans">
-      <Navbar />
-      <main className="font-sans pt-16"> {/* DO NOT use max-w or mx-auto here */}
-        <Hero />
-        <About />
-        <Skills />
-        <Projects />
-        <Contact />
-      </main>
-      <Footer />
-    </div>
+      <div className="font-sans" >
+        <Navbar />
+        <main className="font-sans pt-16"> {/* DO NOT use max-w or mx-auto here */}
+          <Hero />
+          <About />
+          <Skills />
+          <Projects />
+          <Contact />
+        </main>
+        <Footer />
+      </div>
     </>
   );
 };
