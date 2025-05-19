@@ -3,34 +3,35 @@ import { FaLinkedin, FaGithub } from 'react-icons/fa';
 
 const Contact: React.FC = () => {
   return (
-    <section id="contact" className="py-16 px-6 text-center bg-gray-900 text-white">
-      <h2 className="text-3xl font-bold mb-6">Contact</h2>
-      <p className="mb-6">Feel free to reach out via email or connect with me:</p>
+    <section id="contact" className="py-24 px-6 text-center bg-neutral-950 text-white">
+      <div className="max-w-2xl mx-auto">
+        <p className="text-sm uppercase tracking-widest text-neutral-500 mb-3">
+          Let’s Connect
+        </p>
+        <h2 className="text-3xl md:text-4xl font-semibold mb-8">Contact</h2>
+        <p className="text-neutral-400 mb-10">
+          Feel free to reach out via email or connect with me on LinkedIn or GitHub.
+        </p>
 
-      <a
-        href="mailto:your.email@example.com"
-        className="inline-block mb-8 px-6 py-3 bg-blue-600 rounded hover:bg-blue-700 transition"
-      >
-        your.email@example.com
-      </a>
 
-      <div className="flex justify-center gap-8 text-3xl">
-        <a
-          href="https://linkedin.com/in/yourusername"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-blue-400"
-        >
-          <FaLinkedin />
-        </a>
-        <a
-          href="https://github.com/yourusername"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-gray-400"
-        >
-          <FaGithub />
-        </a>
+        <div className="flex justify-center gap-8 text-3xl mt-10">
+          <a
+            href="https://linkedin.com/in/yourusername"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-blue-400 transition-transform hover:scale-110"
+          >
+            <FaLinkedin />
+          </a>
+          <a
+            href="https://github.com/yourusername"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-neutral-400 transition-transform hover:scale-110"
+          >
+            <FaGithub />
+          </a>
+        </div>
       </div>
     </section>
   );

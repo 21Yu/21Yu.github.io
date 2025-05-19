@@ -2,14 +2,31 @@ import React from 'react';
 
 const About: React.FC = () => {
   return (
-    <section id="about" className="w-full py-16 px-6 bg-gray-800 text-white">
-      <h2 className="text-3xl font-bold mb-6 text-center">About Me</h2>
-      <p className="text-lg leading-relaxed max-w-3xl mx-auto text-center">
-        I'm a Computer Science student at Simon Fraser University with a strong interest in machine learning, backend development, and working with data. 
-        I enjoy building scalable systems, analyzing data to uncover insights, and exploring how intelligent algorithms can solve real-world problems.
-        I also love working on clean, responsive front-end interfaces using React and Tailwind CSS.
-        Outside of coding, you'll find me exploring new tech, reading, or hiking around beautiful BC.
-      </p>
+    <section id="about" className="w-full bg-neutral-950 text-white px-6 py-32">
+      <div className="max-w-4xl mx-auto">
+        {/* Section Label */}
+        <p className="text-sm uppercase tracking-widest text-neutral-500 mb-3 text-center">
+          Get to know me
+        </p>
+
+        {/* Heading */}
+        <h2 className="text-3xl md:text-5xl font-semibold text-center mb-10 leading-tight">
+          About Me
+        </h2>
+
+        {/* Description */}
+        <div className="text-neutral-400 text-lg md:text-xl leading-relaxed space-y-6 text-center">
+          <p>
+            I'm a Computer Science student at <span className="text-white font-medium">Simon Fraser University</span>, currently exploring the intersection of 
+            <span className="text-white font-medium"> machine learning</span> and 
+            <span className="text-white font-medium"> computational finance</span>.
+          </p>
+          <p>
+            I enjoy building scalable systems, experimenting with intelligent algorithms, and diving into data to uncover meaningful insights. 
+            My technical interests lie in back-end engineering, time series forecasting, and real-world ML applications.
+          </p>
+        </div>
+      </div>
     </section>
   );
 };
