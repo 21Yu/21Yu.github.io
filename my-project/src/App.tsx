@@ -4,6 +4,8 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
+import Skills from './components/Skills';
 
 const App: React.FC = () => {
   return (
@@ -12,9 +14,11 @@ const App: React.FC = () => {
       <main className="font-sans pt-16"> {/* DO NOT use max-w or mx-auto here */}
         <Hero />
         <About />
+        <Skills />
         <Projects />
         <Contact />
       </main>
+      <Footer />
     </>
   );
 };
