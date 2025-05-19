@@ -2,13 +2,13 @@ import React from 'react';
 
 const Projects: React.FC = () => {
   return (
-    <section id="projects" className="bg-neutral-950 py-24 px-6 text-white">
+    <section id="projects" className="bg-neutral-950 py-24 px-6 text-white font-sans">
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <p className="text-sm uppercase tracking-widest text-neutral-500 text-center mb-3">
           What I’ve built
         </p>
-        <h2 className="text-3xl md:text-4xl font-semibold text-center mb-16">
+        <h2 className="text-3xl md:text-5xl font-semibold text-center mb-16 leading-tight">
           Projects
         </h2>
 
@@ -40,17 +40,13 @@ const Projects: React.FC = () => {
             ].map((project, idx) => (
               <div
                 key={idx}
-                className="bg-neutral-900 rounded-xl p-6 border border-neutral-800 hover:border-neutral-700 transition"
+                className="bg-neutral-900 rounded-xl p-6 border border-neutral-800 hover:border-green-600 transition-colors"
               >
-                <h4 className="text-lg font-semibold text-white mb-2">
-                  {project.title}
-                </h4>
-                <p className="text-neutral-400 text-sm mb-4">
-                  {project.description}
-                </p>
+                <h4 className="text-lg font-semibold text-white mb-2">{project.title}</h4>
+                <p className="text-neutral-400 text-sm mb-4">{project.description}</p>
                 <a
                   href={project.link}
-                  className="text-blue-400 text-sm hover:underline"
+                  className="text-green-500 text-sm hover:underline"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -72,7 +68,7 @@ const Projects: React.FC = () => {
               .map((_, idx) => (
                 <div
                   key={idx}
-                  className="bg-neutral-900 rounded-xl p-6 border border-neutral-800 hover:border-neutral-700 transition"
+                  className="bg-neutral-900 rounded-xl p-6 border border-neutral-800 hover:border-green-600 transition-colors"
                 >
                   <h4 className="text-lg font-semibold text-white mb-2">
                     Hackathon Project {idx + 1}
@@ -82,7 +78,7 @@ const Projects: React.FC = () => {
                   </p>
                   <a
                     href="#"
-                    className="text-blue-400 text-sm hover:underline"
+                    className="text-green-500 text-sm hover:underline"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

@@ -7,21 +7,13 @@ const Hero = () => {
         </p>
 
         <h1 className="text-4xl md:text-6xl font-semibold leading-tight text-white mb-6">
-          Hi, I'm <span className="text-green-300">YU WU</span>
+          Hi, I'm <span className="text-green-600">YU WU</span>
         </h1>
 
         <p className="text-lg md:text-xl text-neutral-400 leading-relaxed">
           I'm a computer science student with interests in <span className="text-white font-medium">machine learning</span> and <span className="text-white font-medium">quantitative finance</span>. I enjoy building intelligent systems and exploring data-driven insights.
         </p>
 
-        <div className="mt-10">
-          <a
-            href="#work"
-            className="inline-block border border-neutral-700 text-neutral-300 px-6 py-2 rounded-full hover:border-indigo-400 hover:text-indigo-400 transition-colors"
-          >
-            View Work
-          </a>
-        </div>
       </div>
     </section>
   );
