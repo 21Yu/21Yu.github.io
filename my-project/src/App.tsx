@@ -12,7 +12,7 @@ const App: React.FC = () => {
     <>
       <div className="font-sans" >
         <Navbar />
-        <main className="font-sans pt-16"> {/* DO NOT use max-w or mx-auto here */}
+        <main className="font-sans"> {/* DO NOT use max-w or mx-auto here */}
           <Hero />
           <About />
           <Skills />
