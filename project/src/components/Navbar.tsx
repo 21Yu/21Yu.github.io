@@ -17,13 +17,6 @@ const Navbar: React.FC = () => {
         </a>
         <div className="space-x-6 text-white text-sm md:text-base font-medium flex flex-wrap justify-center md:justify-end">
           <a
-            href="#about"
-            className="relative hover:text-green-600 transition-colors duration-300 before:content-[''] before:absolute before:-bottom-1 before:left-0 before:w-0 before:h-[2px] before:bg-green-600 hover:before:w-full before:transition-all before:duration-300"
-            aria-label="About section"
-          >
-            About
-          </a>
-          <a
             href="#skills"
             className="relative hover:text-green-600 transition-colors duration-300 before:content-[''] before:absolute before:-bottom-1 before:left-0 before:w-0 before:h-[2px] before:bg-green-600 hover:before:w-full before:transition-all before:duration-300"
             aria-label="Skills section"
