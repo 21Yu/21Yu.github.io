@@ -17,7 +17,7 @@ const Contact: React.FC = () => {
 
         <div className="flex justify-center gap-8 text-3xl mt-10">
           <a
-            href="https://linkedin.com/in/yourusername"
+            href="https://www.linkedin.com/in/yu-wu-a283492a5/"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-blue-400 transition-transform hover:scale-110"
@@ -26,7 +26,7 @@ const Contact: React.FC = () => {
             <FaLinkedin />
           </a>
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/21Yu"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-neutral-400 transition-transform hover:scale-110"

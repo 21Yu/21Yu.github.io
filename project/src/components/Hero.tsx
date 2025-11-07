@@ -11,7 +11,8 @@ const Hero = () => {
         </h1>
 
         <p className="text-lg md:text-xl text-neutral-400 leading-relaxed">
-          I'm a computer science student with interests in <span className="text-white font-medium">machine learning</span> and <span className="text-white font-medium">quantitative finance</span>. I enjoy building intelligent systems and exploring data-driven insights.
+          I’m a Computer Science student passionate about <span className="text-white font-medium">machine learning</span>, <span className="text-white font-medium">data-driven applications</span>, and <span className="text-white font-medium">systems programming</span>. 
+          I enjoy building intelligent systems, working with data, and exploring new areas of technology.
         </p>
       </div>
     </section>

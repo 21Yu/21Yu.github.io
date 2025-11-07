@@ -1,6 +1,6 @@
 import React from 'react';
-import { FaReact, FaNodeJs, FaPython } from 'react-icons/fa';
-import { SiCplusplus, SiOpenai } from 'react-icons/si';
+import { FaPython, FaLinux } from 'react-icons/fa';
+import { SiC, SiCplusplus } from 'react-icons/si';
 
 const Skills: React.FC = () => {
   return (
@@ -20,26 +20,29 @@ const Skills: React.FC = () => {
         </h2>
 
         {/* Icons Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-10 justify-items-center">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-10 justify-items-center">
+          {/* C */}
           <div className="flex flex-col items-center">
-            <FaReact className="text-cyan-400 text-4xl hover:text-cyan-300 transition-colors" />
-            <span className="text-sm mt-2 text-neutral-400">React</span>
+            <SiC className="text-red-500 text-4xl hover:text-red-400 transition-colors" />
+            <span className="text-sm mt-2 text-neutral-400">C</span>
           </div>
-          <div className="flex flex-col items-center">
-            <FaNodeJs className="text-green-500 text-4xl hover:text-green-400 transition-colors" />
-            <span className="text-sm mt-2 text-neutral-400">Node.js</span>
-          </div>
-          <div className="flex flex-col items-center">
-            <FaPython className="text-yellow-300 text-4xl hover:text-yellow-200 transition-colors" />
-            <span className="text-sm mt-2 text-neutral-400">Python</span>
-          </div>
+
+          {/* C++ */}
           <div className="flex flex-col items-center">
             <SiCplusplus className="text-blue-400 text-4xl hover:text-blue-300 transition-colors" />
             <span className="text-sm mt-2 text-neutral-400">C++</span>
           </div>
+
+          {/* Python */}
           <div className="flex flex-col items-center">
-            <SiOpenai className="text-purple-400 text-4xl hover:text-purple-300 transition-colors" />
-            <span className="text-sm mt-2 text-neutral-400">ChatGPT</span>
+            <FaPython className="text-yellow-300 text-4xl hover:text-yellow-200 transition-colors" />
+            <span className="text-sm mt-2 text-neutral-400">Python</span>
+          </div>
+
+          {/* Linux */}
+          <div className="flex flex-col items-center">
+            <FaLinux className="text-red-400 text-4xl hover:text-red-300 transition-colors" />
+            <span className="text-sm mt-2 text-neutral-400">Linux</span>
           </div>
         </div>
       </div>

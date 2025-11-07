@@ -17,9 +17,10 @@ const About: React.FC = () => {
         {/* Description */}
         <div className="max-w-2xl mx-auto text-neutral-400 text-lg md:text-xl leading-relaxed space-y-6 text-center">
           <p>
-            I'm a Computer Science student at <span className="text-white font-medium">Simon Fraser University</span>, currently exploring the intersection of
-            <span className="text-white font-medium"> machine learning</span> and
-            <span className="text-white font-medium"> computational finance</span>.
+            I’m currently pursuing a <span className="text-white font-medium">BSc in Computer Science at Simon Fraser University</span> with a focus on <span className="text-white font-medium">machine learning</span>, <span className="text-white font-medium">data processing</span>,
+            and <span className="text-white font-medium">low-level system programming</span>. 
+            My projects involve training ML models, analyzing datasets, 
+            and building software that interacts closely with hardware or system-level resources.
           </p>
         </div>
       </div>

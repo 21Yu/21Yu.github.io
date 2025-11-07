@@ -17,25 +17,19 @@ const Projects: React.FC = () => {
           <h3 className="text-xl md:text-2xl font-semibold text-neutral-300 mb-8 border-b border-neutral-700 pb-2">
             Personal Projects
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {[
               {
-                title: 'ChaxBot',
+                title: 'Autonomous Line-Following Robot',
                 description:
-                  'A chatbot that explains Canadian tax concepts using NLP and a custom Q&A model.',
-                link: 'https://github.com/yourusername/chaxbot',
+                  'Developed a Python-based LEGO EV3 robot using PID control to follow colored paths and detect obstacles. Tuned PID gains for smooth, accurate navigation.',
+                link: 'https://github.com/21Yu/ev3-line-follower',
               },
               {
-                title: 'Stock Predictor',
+                title: 'ML Rent Price Predictor',
                 description:
-                  'ML-powered stock trend predictor using LSTM neural networks and historical data.',
-                link: 'https://github.com/yourusername/stock-predictor',
-              },
-              {
-                title: 'BlockchainPay',
-                description:
-                  'Ethereum-based payment app enabling smart contract transactions and wallet-to-wallet transfers.',
-                link: 'https://github.com/yourusername/blockchainpay',
+                  'Built a machine learning pipeline using XGBoost and Pandas to predict rental prices from 13k+ real estate records. Engineered features and tuned the model for high accuracy (R² = 0.74).',
+                link: 'https://github.com/21Yu/FairRent',
               },
             ].map((project, idx) => (
               <div
@@ -57,35 +51,23 @@ const Projects: React.FC = () => {
           </div>
         </div>
 
-        {/* Hackathon Projects */}
+        {/* Hackathon / Devpost */}
         <div>
           <h3 className="text-xl md:text-2xl font-semibold text-neutral-300 mb-8 border-b border-neutral-700 pb-2">
-            Hackathon Projects
+            Hackathons
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {Array(3)
-              .fill(0)
-              .map((_, idx) => (
-                <div
-                  key={idx}
-                  className="bg-neutral-900 rounded-xl p-6 border border-neutral-800 hover:border-green-600 transition-colors"
-                >
-                  <h4 className="text-lg font-semibold text-white mb-2">
-                    Hackathon Project {idx + 1}
-                  </h4>
-                  <p className="text-neutral-400 text-sm mb-4">
-                    Describe your hackathon project briefly here. Include any awards, special tools used, or what problem it solved.
-                  </p>
-                  <a
-                    href="#"
-                    className="text-green-500 text-sm hover:underline"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    View Project
-                  </a>
-                </div>
-              ))}
+          <div className="bg-neutral-900 rounded-xl p-6 border border-neutral-800 hover:border-green-600 transition-colors text-center">
+            <p className="text-neutral-400 mb-4">
+              Check out all my hackathon projects and experiences on my Devpost profile.
+            </p>
+            <a
+              href="https://devpost.com/12DevYu"
+              className="text-green-500 text-sm hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Devpost Profile
+            </a>
           </div>
         </div>
       </div>
