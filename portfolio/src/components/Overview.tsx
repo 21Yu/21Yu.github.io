@@ -2,16 +2,16 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 export default function Overview() {
     return (
-        <section id="overview" className="bg-gray-700 flex w-full min-h-screen text-white md:flex-row flex-col">
+        <section id="overview" className="bg-black flex w-full min-h-screen text-white md:flex-row flex-col">
             <div className="flex md:flex-[2] justify-center items-center p-10">
                 <div className='flex flex-col'>
                     <h1 className="text-6xl mb-6">Hi, my name is Yu Wu</h1>
                     <h2 className="text-xl mb-6">Computer Science Student @ SFU</h2>
                     <p className="mb-6"> Specializing in Software Systems. 
-                    I engineer full-stack platforms, design predictive models, 
+                    I engineer full-stack platforms, design machine learning models, 
                     and optimize backend systems to make complex data highly accessible.
                     </p>
-                    <a className="border p-2 bg-black" href="#projects">
+                    <a className="border p-2 bg-black flex items-center justify-center hover:bg-white/100 hover:text-black" href="#projects">
                         Explore My Projects
                     </a>
                 </div>

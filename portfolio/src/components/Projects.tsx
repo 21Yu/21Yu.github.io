@@ -3,7 +3,7 @@ export default function Projects() {
     return (
         <section id="projects" className="flex text-white w-full min-h-screen bg-black md:flex-row flex-col">
             <div className="flex flex-col md:flex-1 justify-center items-center p-10">
-                <h1 className="text-6xl">Technical Projects</h1>
+                <h1 className="text-6xl">Projects</h1>
             </div>
 
             <div className="flex md:flex-[2] items-center justify-center p-5">
@@ -26,9 +26,9 @@ export default function Projects() {
                     </div>
 
                     <div className="flex flex-col p-6 border">
-                        <h3 className="text-xl text-white">Where To Live</h3>
+                        <h3 className="text-xl text-white">OpenDeals</h3>
                         <p className="text-sm text-zinc-400">
-                            Web app that visualizes Canadian housing, employment, and cost-of-living trends to support relocation and home-buying decisions.
+                            Full-stack shopping app that searches Google Shopping, compares prices, and identifies top deals.
                         </p>
                         <div className="flex flex-wrap gap-1.5">
                             <span className="text-[11px] px-2 py-0.5 rounded bg-zinc-800/80 text-zinc-300 font-mono">React</span>
@@ -36,7 +36,7 @@ export default function Projects() {
                             <span className="text-[11px] px-2 py-0.5 rounded bg-zinc-800/80 text-zinc-300 font-mono">Python</span>
                             <span className="text-[11px] px-2 py-0.5 rounded bg-zinc-800/80 text-zinc-300 font-mono">Recharts</span>
                         </div>
-                        <a href="https://github.com/21Yu/where-to-live-canada" target="_blank" rel="noreferrer" className="flex items-center gap-1.5 hover:text-white transition-colors">
+                        <a href="https://github.com/21Yu/OpenDeals" target="_blank" rel="noreferrer" className="flex items-center gap-1.5 hover:text-white transition-colors">
                         <FaGithub size={16} /> Code
                         </a>
                     </div>
