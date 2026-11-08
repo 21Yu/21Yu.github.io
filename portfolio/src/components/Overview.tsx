@@ -1,45 +1,31 @@
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaArrowDown, FaGithub, FaLinkedin } from 'react-icons/fa';
 
 export default function Overview() {
-    return (
-        <section id="overview" className="bg-black flex w-full min-h-screen text-white md:flex-row flex-col">
-            <div className="flex md:flex-[2] justify-center items-center p-10">
-                <div className='flex flex-col'>
-                    <h1 className="text-6xl mb-6">Hi, my name is Yu Wu</h1>
-                    <h2 className="text-xl mb-6">Computer Science Student @ SFU</h2>
-                    <p className="mb-6"> Specializing in Software Systems. 
-                    I engineer full-stack platforms, design machine learning models, 
-                    and optimize backend systems to make complex data highly accessible.
-                    </p>
-                    <a className="border p-2 bg-black flex items-center justify-center hover:bg-white/100 hover:text-black" href="#projects">
-                        Explore My Projects
-                    </a>
-                </div>
-            </div>
-
-            <div className="flex md:flex-1 items-center justify-center p-5">
-                <div className='flex gap-12'>
-                    <a 
-                        href="https://github.com/21Yu" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="hover:text-gray-400 transition-colors duration-100"
-                        aria-label="GitHub Profile"
-                    >
-                        <FaGithub size={40} />
-                    </a>
-
-                    <a 
-                        href="https://linkedin.com/in/yuw2" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="hover:text-gray-400 transition-colors duration-100"
-                        aria-label="LinkedIn Profile"
-                    >
-                        <FaLinkedin size={40} />
-                    </a>
-                </div>
-            </div>
-        </section>
-    )
+  return (
+    <section id="overview" className="hero section-shell">
+      <div className="hero-copy">
+        <p className="eyebrow"><span className="status-dot" /> Computer Science student at SFU</p>
+        <h1>I build thoughtful software for <span>real-world problems.</span></h1>
+        <p className="hero-summary">
+          I’m Yu Wu, a Software Systems student at Simon Fraser University interested in full-stack engineering,
+          backend systems, and turning complex data into useful products.
+        </p>
+        <div className="hero-actions">
+          <a className="button button-primary" href="#projects">Explore my work <FaArrowDown aria-hidden="true" /></a>
+          <a className="button button-secondary" href="https://www.linkedin.com/in/yuw2" target="_blank" rel="noreferrer">Let’s connect</a>
+        </div>
+        <div className="social-links" aria-label="Social profiles">
+          <a href="https://github.com/21Yu" target="_blank" rel="noreferrer"><FaGithub aria-hidden="true" /> GitHub</a>
+          <a href="https://www.linkedin.com/in/yuw2" target="_blank" rel="noreferrer"><FaLinkedin aria-hidden="true" /> LinkedIn</a>
+        </div>
+      </div>
+      <div className="hero-note" aria-label="Areas of interest">
+        <div className="note-mark">YU<span>.</span></div>
+        <p className="note-label">CURRENTLY EXPLORING</p>
+        <p className="note-focus">Full-stack products<br />and reliable systems</p>
+        <div className="note-divider" />
+        <p className="note-location">Based in Metro Vancouver<br />Open to co-op opportunities</p>
+      </div>
+    </section>
+  );
 }

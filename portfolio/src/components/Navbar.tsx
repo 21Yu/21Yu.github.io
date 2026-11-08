@@ -1,25 +1,13 @@
 export default function Navbar() {
   return (
-    <nav className="w-full sticky top-0 z-50 h-24 bg-black text-white flex px-6">
-      
-      <ul className="flex items-center gap-x-12 text-lg font-medium">
-        <li>
-          <a href="#overview" className="hover:opacity-60 transition-opacity duration-200">
-            Overview
-          </a>
-        </li>
-        <li>
-          <a href="#skills" className="hover:opacity-60 transition-opacity duration-200">
-            Skills
-          </a>
-        </li>
-        <li>
-          <a href="#projects" className="hover:opacity-60 transition-opacity duration-200">
-            Projects
-          </a>
-        </li>
+    <nav className="site-nav" aria-label="Main navigation">
+      <a className="wordmark" href="#overview" aria-label="Yu Wu, home">YW<span>.</span></a>
+      <ul>
+        <li><a href="#overview">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
       </ul>
-
+      <a className="nav-contact" href="https://www.linkedin.com/in/yuw2" target="_blank" rel="noreferrer">Contact <span aria-hidden="true">↗</span></a>
     </nav>
   );
 }

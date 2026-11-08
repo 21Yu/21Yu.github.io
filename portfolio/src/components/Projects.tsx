@@ -1,63 +1,54 @@
-import { FaGithub } from 'react-icons/fa';
+import { FaArrowUpRightFromSquare, FaGithub } from 'react-icons/fa6';
+
+const projects = [
+  {
+    number: '01', name: 'FairRent', type: 'Rental market research',
+    description: 'Explore rental listings on an interactive map, compare neighborhood pricing, and see machine learning rent estimates.',
+    contribution: 'Built a full-stack platform with listing filters, property details, rent predictions, neighborhood insights, and saved listings.',
+    stack: ['React', 'TypeScript', 'FastAPI', 'PostgreSQL', 'XGBoost', 'Leaflet'],
+    href: 'https://github.com/21Yu/FairRent', demo: 'https://fair-rent-five.vercel.app/',
+  },
+  {
+    number: '02', name: 'OpenDeals', type: 'Shopping and price tracking',
+    description: 'Search Google Shopping results, compare products, and keep useful finds in a personal saved list.',
+    contribution: 'Built a full-stack app with account sign-in, product search and filters, saved items, price history, and price-drop notifications.',
+    stack: ['React', 'TypeScript', 'Express', 'PostgreSQL', 'SerpApi', 'Vercel Cron'],
+    href: 'https://github.com/21Yu/OpenDeals', demo: 'https://open-deals.vercel.app',
+  },
+];
+
 export default function Projects() {
-    return (
-        <section id="projects" className="flex text-white w-full min-h-screen bg-black md:flex-row flex-col">
-            <div className="flex flex-col md:flex-1 justify-center items-center p-10">
-                <h1 className="text-6xl">Projects</h1>
+  return (
+    <section id="projects" className="projects-section section-shell">
+      <div className="section-heading">
+        <p className="eyebrow">SELECTED WORK</p>
+        <h2>Projects with a purpose<span>.</span></h2>
+        <p>Small snapshots of the problems I like working on—and the tools I used to work through them.</p>
+      </div>
+      <div className="project-list">
+        {projects.map((project) => (
+          <article className="project-card" key={project.name}>
+            <div className="project-number">{project.number}</div>
+            <div className="project-main">
+              <p className="project-type">{project.type}</p>
+              <h3>{project.name}</h3>
+              <p className="project-description">{project.description}</p>
+              <p className="project-contribution"><strong>What I built</strong> {project.contribution}</p>
+              <div className="tag-list" aria-label={`${project.name} technologies`}>
+                {project.stack.map((item) => <span className="tag" key={item}>{item}</span>)}
+              </div>
             </div>
-
-            <div className="flex md:flex-[2] items-center justify-center p-5">
-                <div className="grid gap-8 md:grid-cols-2">
-                        
-                    <div className="flex flex-col p-6 border">
-                        <h3 className="text-xl text-white">FairRent</h3>
-                        <p className="text-sm text-zinc-400">
-                            Web app that uses machine learning to evaluate rental listings and identify fair prices, overpriced units, and good deals.
-                        </p>
-                        <div className="flex flex-wrap gap-1.5">
-                            <span className="text-[11px] px-2 py-0.5 rounded bg-zinc-800/80 text-zinc-300 font-mono">React</span>
-                            <span className="text-[11px] px-2 py-0.5 rounded bg-zinc-800/80 text-zinc-300 font-mono">FastAPI</span>
-                            <span className="text-[11px] px-2 py-0.5 rounded bg-zinc-800/80 text-zinc-300 font-mono">XGBoost</span>
-                            <span className="text-[11px] px-2 py-0.5 rounded bg-zinc-800/80 text-zinc-300 font-mono">Leaflet</span>
-                        </div>
-                        <a href="https://github.com/21Yu/FairRent" target="_blank" rel="noreferrer" className="flex items-center gap-1.5 hover:text-white transition-colors">
-                        <FaGithub size={16} /> Code
-                        </a>
-                    </div>
-
-                    <div className="flex flex-col p-6 border">
-                        <h3 className="text-xl text-white">OpenDeals</h3>
-                        <p className="text-sm text-zinc-400">
-                            Full-stack shopping app that searches Google Shopping, compares prices, and identifies top deals.
-                        </p>
-                        <div className="flex flex-wrap gap-1.5">
-                            <span className="text-[11px] px-2 py-0.5 rounded bg-zinc-800/80 text-zinc-300 font-mono">React</span>
-                            <span className="text-[11px] px-2 py-0.5 rounded bg-zinc-800/80 text-zinc-300 font-mono">FastAPI</span>
-                            <span className="text-[11px] px-2 py-0.5 rounded bg-zinc-800/80 text-zinc-300 font-mono">Python</span>
-                            <span className="text-[11px] px-2 py-0.5 rounded bg-zinc-800/80 text-zinc-300 font-mono">Recharts</span>
-                        </div>
-                        <a href="https://github.com/21Yu/OpenDeals" target="_blank" rel="noreferrer" className="flex items-center gap-1.5 hover:text-white transition-colors">
-                        <FaGithub size={16} /> Code
-                        </a>
-                    </div>
-
-                    <div className="flex flex-col p-6 border">
-                        <h3 className="text-xl text-white">EV3 Follower</h3>
-                        <p className="text-sm text-zinc-400">
-                            EV3 robot using Pybricks MicroPython with PID-based line following, obstacle detection, and color-based decision making.
-                        </p>
-                        <div className="flex flex-wrap gap-1.5">
-                            <span className="text-[11px] px-2 py-0.5 rounded bg-zinc-800/80 text-zinc-300 font-mono">Python</span>
-                            <span className="text-[11px] px-2 py-0.5 rounded bg-zinc-800/80 text-zinc-300 font-mono">PID Loops</span>
-                            <span className="text-[11px] px-2 py-0.5 rounded bg-zinc-800/80 text-zinc-300 font-mono">Hardware</span>
-                        </div>
-                        <a href="https://github.com/21Yu/ev3-line-follower" target="_blank" rel="noreferrer" className="flex items-center gap-1.5 hover:text-white transition-colors">
-                        <FaGithub size={16} /> Code
-                        </a>
-                    </div>
-
-                </div>
+            <div className="project-links">
+              <a className="project-link" href={project.demo} target="_blank" rel="noreferrer" aria-label={`${project.name} live demo`}>
+                <span>Live demo</span><FaArrowUpRightFromSquare className="external-icon" aria-hidden="true" />
+              </a>
+              <a className="project-link" href={project.href} target="_blank" rel="noreferrer" aria-label={`${project.name} source code on GitHub`}>
+                <FaGithub aria-hidden="true" /><span>Source</span><FaArrowUpRightFromSquare className="external-icon" aria-hidden="true" />
+              </a>
             </div>
-        </section>
-    )
+          </article>
+        ))}
+      </div>
+    </section>
+  );
 }

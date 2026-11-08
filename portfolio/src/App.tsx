@@ -7,11 +7,13 @@ import Projects from "./components/Projects";
 export default function App() {
   return (
     <>
-      <Navbar/>
-      <Overview/>
-      <Skills/>
-      <Projects/>
-      <Footer/>
+      <Navbar />
+      <main>
+        <Overview />
+        <Projects />
+        <Skills />
+      </main>
+      <Footer />
     </>
   )
 }
