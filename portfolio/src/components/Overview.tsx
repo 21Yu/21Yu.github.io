@@ -23,8 +23,6 @@ export default function Overview() {
         <div className="note-mark">YU<span>.</span></div>
         <p className="note-label">CURRENTLY EXPLORING</p>
         <p className="note-focus">Full-stack products<br />and reliable systems</p>
-        <div className="note-divider" />
-        <p className="note-location">Based in Metro Vancouver<br />Open to co-op opportunities</p>
       </div>
     </section>
   );

@@ -1,8 +1,8 @@
 const groups = [
-  { label: 'Languages', items: ['TypeScript', 'JavaScript', 'Python', 'Java', 'C++', 'C', 'HTML', 'CSS', 'MATLAB'] },
-  { label: 'Frameworks', items: ['React', 'FastAPI', 'Node.js', 'Express', 'Spring Boot'] },
-  { label: 'Data & storage', items: ['PostgreSQL', 'MongoDB', 'pandas', 'scikit-learn', 'XGBoost'] },
-  { label: 'Tools & platforms', items: ['Git', 'Docker', 'Linux', 'Nginx', 'GitHub Actions', 'Azure', 'Google Cloud', 'Vite'] },
+  { label: 'Languages', items: ['TypeScript', 'JavaScript', 'Python', 'HTML', 'CSS'] },
+  { label: 'Frameworks', items: ['React', 'FastAPI', 'Node.js', 'Express'] },
+  { label: 'Data & storage', items: ['PostgreSQL'] },
+  { label: 'Tools & platforms', items: ['Git', 'Docker', 'Linux', 'GitHub Actions'] },
 ];
 
 export default function Skills() {
